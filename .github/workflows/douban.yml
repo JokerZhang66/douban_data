@@ -45,3 +45,4 @@ jobs:
       with:
         message: 'chore: update douban data'
         add: './data/douban'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
