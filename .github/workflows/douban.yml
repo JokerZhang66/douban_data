@@ -2,7 +2,7 @@
 name: douban
 on: 
   schedule:
-  - cron: "30 * * * *"
+  - cron: "10 * * * *"
 
 jobs:
   douban:
@@ -41,7 +41,7 @@ jobs:
         dir: ./data/douban
   
     - name: Commit
-      uses: EndBug/add-and-commit@v9
+      uses: EndBug/add-and-commit@v9.1.1
       with:
         message: 'chore: update douban data'
         add: './data/douban'
